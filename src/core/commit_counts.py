@@ -21,7 +21,15 @@ def eprint(*args, **kwargs):
 def run_git(repo: Path, args: List[str]) -> str:
     cmd = ["git", "-C", str(repo)] + args
     try:
-        cp = subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        cp = subprocess.run(
+            cmd,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+        )
         return cp.stdout
     except subprocess.CalledProcessError as e:
         raise RuntimeError(
