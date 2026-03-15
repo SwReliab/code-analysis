@@ -1,0 +1,24 @@
+module:
+  root_src: src
+  git_root: .
+  git_subdir: src
+  depth: 1
+
+rle:
+  start: 2025-W01
+  until: 2025-W52
+
+embedding:
+  model: text-embedding-3-small
+  weight_mode: loc
+
+lizard:
+  csv: lizard.csv
+  languages: []
+  extra_args: []
+
+outputs:
+  embeddings_jsonl: group_embeddings.jsonl
+  commits_by_module_week_csv: commits_by_module_week.csv
+  module_metrics_csv: module_metrics.csv
+  faultdata_dir: faultdata

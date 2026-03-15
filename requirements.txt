@@ -1,0 +1,17 @@
+# config
+PyYAML==6.0.3
+
+# pipeline
+lizard==1.21.0
+openai==2.24.0
+
+# analysis notebook
+pandas==2.3.3
+numpy==2.0.2
+scikit-learn==1.6.1
+joblib==1.5.3
+
+# test
+pytest==8.4.2
+
+dotenv

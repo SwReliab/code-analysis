@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test / type check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Local environment
+.env
+.env.*
+
+# Analysis outputs
+group_embeddings.jsonl
+commits_by_module_week.csv
+module_metrics.csv
+lizard.csv
+faultdata/
+
+# Jupyter
+.ipynb_checkpoints/
